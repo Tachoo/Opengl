@@ -6,6 +6,54 @@
 
 
 float deltatime=1.0f;
+void GLRenderer::testplane()
+{
+	
+	
+}
+void GLRenderer::drawCube(float size)
+{
+	{
+		glBegin(GL_QUADS);
+		// front face
+		glColor3f(1.0, 0.0, 0.0);
+		glVertex3f(size / 2, size / 2, size / 2);
+		glVertex3f(-size / 2, size / 2, size / 2);
+		glVertex3f(-size / 2, -size / 2, size / 2);
+		glVertex3f(size / 2, -size / 2, size / 2);
+		// left face
+		glColor3f(0.0, 1.0, 0.0);
+		glVertex3f(-size / 2, size / 2, size / 2);
+		glVertex3f(-size / 2, -size / 2, size / 2);
+		glVertex3f(-size / 2, -size / 2, -size / 2);
+		glVertex3f(-size / 2, size / 2, -size / 2);
+		// back face
+		glColor3f(0.0, 0.0, 1.0);
+		glVertex3f(size / 2, size / 2, -size / 2);
+		glVertex3f(-size / 2, size / 2, -size / 2);
+		glVertex3f(-size / 2, -size / 2, -size / 2);
+		glVertex3f(size / 2, -size / 2, -size / 2);
+		// right face
+		glColor3f(1.0, 1.0, 0.0);
+		glVertex3f(size / 2, size / 2, size / 2);
+		glVertex3f(size / 2, -size / 2, size / 2);
+		glVertex3f(size / 2, -size / 2, -size / 2);
+		glVertex3f(size / 2, size / 2, -size / 2);
+		// top face
+		glColor3f(1.0, 0.0, 1.0);
+		glVertex3f(size / 2, size / 2, size / 2);
+		glVertex3f(-size / 2, size / 2, size / 2);
+		glVertex3f(-size / 2, size / 2, -size / 2);
+		glVertex3f(size / 2, size / 2, -size / 2);
+		// bottom face
+		glColor3f(0.0, 1.0, 1.0);
+		glVertex3f(size / 2, -size / 2, size / 2);
+		glVertex3f(-size / 2, -size / 2, size / 2);
+		glVertex3f(-size / 2, -size / 2, -size / 2);
+		glVertex3f(size / 2, -size / 2, -size / 2);
+		glEnd();
+	}
+}
 GLRenderer::GLRenderer(void)
 {
 	
@@ -74,7 +122,6 @@ void GLRenderer::Resize(unsigned int _width, unsigned int _height)
 void GLRenderer::Update(float _deltaTime)
 {
 	
-	deltatime += _deltaTime;
 
 }
 
@@ -83,16 +130,24 @@ void GLRenderer::Render()
 	
 	//Limpiamos pantalla
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	float pos[] = { 2.0,10.0,0.0,1.0 };
-	glLightfv(GL_LIGHT0, GL_POSITION, pos);
+	
 	
 	glLoadIdentity();   //nos posisionamos en el centro
-//Camara
-	gluLookAt(1,2.0f,10.0f,/*/Donde mira/*/-4.0,0,0,/*/Donde esta parado/*/0,1,0/*/Que tanto esta despegado del suelo/*/); //Funcion LookAt algo confusa.
-//Camara
-	
-     
+	gluLookAt(0, 0, -5,/*/Donde mira/*/0, 0, 0,/*/Donde esta parado/*/0, 1, 0/*/Que tanto esta despegado del suelo/*/); //Funcion LookAt algo confusa.
+	glDisable(GL_LIGHTING);																												//
+	//#pragma region MyRegion
+	glColor3f(0.0, 0.0, 1.0);
+	//glBegin(GL_TRIANGLES);
 
+	//glVertex3f(-1.0, 0.0, 0.0); //P1
+	//glVertex3f(0.0, -1.0, 0.0);  //P2
+	//glVertex3f(1.0, 0.0, 0.0);  //P3
+
+	//glEnd();  
+#pragma endregion
+
+
+	drawCube(1.0f);
 	//Mostramos todo lo dibujado //BACK Buffer
 	SwapBuffers(m_hDC);
 }

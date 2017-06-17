@@ -11,7 +11,9 @@ class GLRenderer
 {
 	public:
 		//
-
+		void testplane();
+		void drawCube(float size);
+		
 		//
 		GLRenderer(void);
 		~GLRenderer(void);

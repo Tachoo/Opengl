@@ -10,9 +10,6 @@
     <Filter Include="No_Depend">
       <UniqueIdentifier>{7e90c0a2-6d07-49e9-8ce6-9b879cef0493}</UniqueIdentifier>
     </Filter>
-    <Filter Include="objloader">
-      <UniqueIdentifier>{a98b58d1-8f74-457f-aa95-c8e792c1529f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Code\GLRenderer.cpp">
