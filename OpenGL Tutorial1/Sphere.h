@@ -1,5 +1,5 @@
 #pragma once
-#include"objloader.h"
+
 class Sphere
 {
 public:

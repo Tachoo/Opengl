@@ -51,8 +51,9 @@
     <ClCompile Include="Cube.cpp">
       <Filter>World\Cube</Filter>
     </ClCompile>
-    <ClCompile Include="Sphere.cpp" />
-    <ClCompile Include="objloader.cpp" />
+    <ClCompile Include="Sphere.cpp">
+      <Filter>World\Sphere</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Code\GLRenderer.h">
@@ -73,7 +74,8 @@
     <ClInclude Include="Cube.h">
       <Filter>World\Cube</Filter>
     </ClInclude>
-    <ClInclude Include="Sphere.h" />
-    <ClInclude Include="objloader.h" />
+    <ClInclude Include="Sphere.h">
+      <Filter>World\Sphere</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

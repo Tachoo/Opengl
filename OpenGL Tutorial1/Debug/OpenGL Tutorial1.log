@@ -1,17 +1,5 @@
-﻿  objloader.cpp
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(25): warning C4018: '<': no coinciden signed/unsigned
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(59): warning C4018: '<': no coinciden signed/unsigned
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(88): warning C4018: '<': no coinciden signed/unsigned
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(90): warning C4018: '<': no coinciden signed/unsigned
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(92): warning C4018: '<': no coinciden signed/unsigned
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(94): warning C4018: '<': no coinciden signed/unsigned
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(32): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(2260): note: vea la declaración de 'sscanf'
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(38): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(2260): note: vea la declaración de 'sscanf'
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(46): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(2260): note: vea la declaración de 'sscanf'
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\opengl tutorial1\objloader.cpp(50): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(2260): note: vea la declaración de 'sscanf'
+﻿  GLRenderer.cpp
+c:\users\tachoo\documents\visual studio 2017\projects\opengl template\code\glrenderer.cpp(48): warning C4838: la conversión de 'double' en 'float' requiere una conversión de restricción
+c:\users\tachoo\documents\visual studio 2017\projects\opengl template\code\glrenderer.cpp(48): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
   OpenGL Tutorial1.vcxproj -> C:\Users\Tachoo\Documents\Visual Studio 2017\Projects\OpenGL Template\Debug\OpenGLTemplate.exe
   OpenGL Tutorial1.vcxproj -> C:\Users\Tachoo\Documents\Visual Studio 2017\Projects\OpenGL Template\Debug\OpenGLTemplate.pdb (Partial PDB)

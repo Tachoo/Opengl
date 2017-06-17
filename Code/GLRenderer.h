@@ -3,6 +3,9 @@
 //Dependencias Esenciales
 #include"../OpenGL Tutorial1/headersbase.h" //Opengl libs
 #include"../OpenGL Tutorial1/localheaders.h"// local headers libs
+#include <vector>
+#include<iostream>
+
 class GLRenderer
 {
 	public:
@@ -10,6 +13,7 @@ class GLRenderer
 
 		//
 		GLRenderer(void);
+		~GLRenderer(void);
 		//Inicia la ventana de OpenGL
 		int Inicializar(HDC _hdc, unsigned int _width, unsigned int _height);
 		//Funcion para notificar a OpenGL que se cambio el tamaño de la ventana
@@ -21,7 +25,8 @@ class GLRenderer
 		//Funcion para inicializar Diferentes cosas en una sola
 		
 	private:
-		objloader loader;
+		//Vector de esferas
+		std::vector<GLUquadricObj*>V_Sphere;
 		//
 		BaseWorld World;
 		//PosicionLuz
