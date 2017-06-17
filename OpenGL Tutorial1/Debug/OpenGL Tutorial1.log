@@ -1,5 +1,7 @@
-﻿  GLRenderer.cpp
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\code\glrenderer.cpp(48): warning C4838: la conversión de 'double' en 'float' requiere una conversión de restricción
-c:\users\tachoo\documents\visual studio 2017\projects\opengl template\code\glrenderer.cpp(48): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+﻿  Main.cpp
+  GLRenderer.cpp
+c:\users\tachoo\documents\visual studio 2017\projects\opengl template\code\glrenderer.cpp(44): warning C4838: la conversión de 'double' en 'float' requiere una conversión de restricción
+c:\users\tachoo\documents\visual studio 2017\projects\opengl template\code\glrenderer.cpp(44): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+  Generando código...
   OpenGL Tutorial1.vcxproj -> C:\Users\Tachoo\Documents\Visual Studio 2017\Projects\OpenGL Template\Debug\OpenGLTemplate.exe
   OpenGL Tutorial1.vcxproj -> C:\Users\Tachoo\Documents\Visual Studio 2017\Projects\OpenGL Template\Debug\OpenGLTemplate.pdb (Partial PDB)

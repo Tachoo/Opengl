@@ -8,18 +8,14 @@
 float deltatime=1.0f;
 GLRenderer::GLRenderer(void)
 {
-	V_Sphere.push_back(gluNewQuadric());//Asi cuando empujamos estamos asignando la funcion automaticamente;
+	
 	
 	m_hDC = NULL;
 }
 
 GLRenderer::~GLRenderer(void)
 {
-	if(V_Sphere[0])
-	{
-		gluDeleteQuadric(V_Sphere[0]);
-		V_Sphere[0] = NULL;
-	}
+	
 }
 
 int GLRenderer::Inicializar(HDC _hdc, unsigned int _width, unsigned int _height)

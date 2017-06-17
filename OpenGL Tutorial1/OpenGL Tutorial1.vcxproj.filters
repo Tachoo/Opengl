@@ -10,30 +10,6 @@
     <Filter Include="No_Depend">
       <UniqueIdentifier>{7e90c0a2-6d07-49e9-8ce6-9b879cef0493}</UniqueIdentifier>
     </Filter>
-    <Filter Include="World">
-      <UniqueIdentifier>{c5862555-f938-408a-9292-bfdc5f53dc9a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="World\Base">
-      <UniqueIdentifier>{422d20eb-9eb9-4447-a683-f75d706d8c8d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="World\Cube">
-      <UniqueIdentifier>{c7f77728-87a1-400d-bcc1-a57f9161f9b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Precompiled">
-      <UniqueIdentifier>{04e21caa-2203-413b-b2a4-5e0f99df9624}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Precompiled\Opengl">
-      <UniqueIdentifier>{0bd58915-f772-4063-9a8b-349c4c14b782}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Precompiled\localheaders">
-      <UniqueIdentifier>{8ac48fd6-0337-4bf1-8665-3b3b5217734a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="spotLlght">
-      <UniqueIdentifier>{7558846e-c9cc-4f0b-a063-eac4f069f6c2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="World\Sphere">
-      <UniqueIdentifier>{b8f9f6e5-fd75-4d3c-89c6-1ab2eb4ea308}</UniqueIdentifier>
-    </Filter>
     <Filter Include="objloader">
       <UniqueIdentifier>{a98b58d1-8f74-457f-aa95-c8e792c1529f}</UniqueIdentifier>
     </Filter>
@@ -45,15 +21,6 @@
     <ClCompile Include="..\Code\Main.cpp">
       <Filter>MainCode</Filter>
     </ClCompile>
-    <ClCompile Include="BaseWorld.cpp">
-      <Filter>World\Base</Filter>
-    </ClCompile>
-    <ClCompile Include="Cube.cpp">
-      <Filter>World\Cube</Filter>
-    </ClCompile>
-    <ClCompile Include="Sphere.cpp">
-      <Filter>World\Sphere</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Code\GLRenderer.h">
@@ -61,21 +28,6 @@
     </ClInclude>
     <ClInclude Include="..\Code\resource.h">
       <Filter>No_Depend</Filter>
-    </ClInclude>
-    <ClInclude Include="BaseWorld.h">
-      <Filter>World\Base</Filter>
-    </ClInclude>
-    <ClInclude Include="headersbase.h">
-      <Filter>Precompiled\Opengl</Filter>
-    </ClInclude>
-    <ClInclude Include="localheaders.h">
-      <Filter>Precompiled\localheaders</Filter>
-    </ClInclude>
-    <ClInclude Include="Cube.h">
-      <Filter>World\Cube</Filter>
-    </ClInclude>
-    <ClInclude Include="Sphere.h">
-      <Filter>World\Sphere</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

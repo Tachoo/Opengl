@@ -1,8 +1,9 @@
 #ifndef GLMANAGER_H
 #define GLMANAGER_H
 //Dependencias Esenciales
-#include"../OpenGL Tutorial1/headersbase.h" //Opengl libs
-#include"../OpenGL Tutorial1/localheaders.h"// local headers libs
+#include <Windows.h>
+#include <GL/gl.h>
+#include <gl\GLU.h>
 #include <vector>
 #include<iostream>
 
@@ -26,11 +27,9 @@ class GLRenderer
 		
 	private:
 		//Vector de esferas
-		std::vector<GLUquadricObj*>V_Sphere;
+		
 		//
-		BaseWorld World;
-		//PosicionLuz
-		Cube  BaseObj;
+		
 		//Referencia de la ventana
 		HDC m_hDC;
 		
